@@ -47,8 +47,8 @@ class Wedstrijden extends \Phalcon\Mvc\Model
     public function initialize()
     {
         $this->belongsTo('soort', 'Soorten', 'soort', array('alias' => 'Soorten'));
-        $this->belongsTo('team1', 'Teams', 'team_id', array('alias' => 'Teams'));
-        $this->belongsTo('team2', 'Teams', 'team_id', array('alias' => 'Teams'));
+        $this->belongsTo('team1', 'Models\Teams', 'team_id', array('alias' => 'Team1'));
+        $this->belongsTo('team2', 'Models\Teams', 'team_id', array('alias' => 'Team2'));
     }
 
 }

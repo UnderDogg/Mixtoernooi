@@ -16,5 +16,11 @@ class MixToernooiRoutes extends Group
             'controller'	=> 'teams',
             'action'		=> 'get'
         ));
+
+        $this->addGet('/wedstrijden', array(
+            'namespace'		=> $this->namespace,
+            'controller'	=> 'wedstrijden',
+            'action'		=> 'get'
+        ));
     }
 }
