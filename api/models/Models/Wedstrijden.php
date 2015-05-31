@@ -42,6 +42,12 @@ class Wedstrijden extends \Phalcon\Mvc\Model
     public $team2_score;
 
     /**
+     *
+     * @var integer
+     */
+    public $status;
+
+    /**
      * Initialize method for model.
      */
     public function initialize()
